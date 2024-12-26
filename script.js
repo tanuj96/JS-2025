@@ -23,12 +23,20 @@
 
 // -> functions can be used as variables like passed or returned from another function
 
-function sqaure(num){
-    return num * num;
-}
+// function sqaure(num){
+//     return num * num;
+// }
 
-function displaySquare(fn){
-    console.log("Square is "+fn(5));
-}
+// function displaySquare(fn){
+//     console.log("Square is "+fn(5));
+// }
 
-displaySquare(sqaure);
+// displaySquare(sqaure);
+
+//-------------------------------------------------------------------------------
+
+//4. IIFE (immediately invoked function expressions)
+
+(function square(num){
+    console.log(num * num)
+})(6);
