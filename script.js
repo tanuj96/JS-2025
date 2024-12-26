@@ -37,6 +37,16 @@
 
 //4. IIFE (immediately invoked function expressions)
 
-(function square(num){
-    console.log(num * num)
-})(6);
+// (function square(num){
+//     console.log(num * num)
+// })(6);
+
+//-------------------------------------------------------------------------------
+
+//5. IIFE O/P Based Question
+
+// (function (x){
+//     return (function (y){
+//         console.log(x);  // 1 bcoz of closure
+//     })(2);
+// })(1);
