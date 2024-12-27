@@ -111,11 +111,21 @@
 
 //9. Hoisting O/P Question
 
-var x = 21;
+// var x = 21;
 
-var fun = function () {
-  console.log(x);
-  var x = 20;
-};
+// var fun = function () {
+//   console.log(x);
+//   var x = 20;
+// };
 
-fun();
+// fun();
+
+//-------------------------------------------------------------------------------
+
+//9. Params vs Arguments
+
+function square(num){ // Params
+    console.log(num * num);
+}
+
+square(5); // Arguments
