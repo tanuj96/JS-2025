@@ -134,9 +134,31 @@
 
 //10. Spread and Rest
 
-// function square(...num) { // rest operator
+// function square(...num) { // rest operator (rest operator should always be last parameter)
 //   console.log(num[0] * num[1]);
 // }
 
 // var arr = [5, 6];
 // square(...arr);  // spread operator
+
+//-------------------------------------------------------------------------------
+
+//11. Callback functions
+   // A function which is passed as argument to another functions
+document.addEventListener("click", function(params){
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
