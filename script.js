@@ -95,3 +95,14 @@
 // }
 
 //-------------------------------------------------------------------------------
+
+//8. Function Hoisting
+
+functionName(); // Hello There!
+console.log(x); // undefined
+
+function functionName() {
+  console.log("Hello There!");
+}
+
+var x = 6;
