@@ -50,3 +50,35 @@
 //         console.log(x);  // 1 bcoz of closure
 //     })(2);
 // })(1);
+
+//-------------------------------------------------------------------------------
+
+//6. Function Scope
+
+// // The following variables are defined in the global scope
+// var num1 = 20;
+//  num2 = 3;
+//  name = "Chamakh";
+
+// // This function is defined in the global scope
+// function multiply() {
+//   return num1 * num2;
+// }
+
+// console.log(multiply()); // 60
+
+// // A nested function example
+// function getScore() {
+//   const num1 = 2;
+//   const num2 = 3;
+
+//   function add() {
+//     return `${name} scored ${num1 + num2}`;
+//   }
+
+//   return add();
+// }
+
+// console.log(getScore()); // "Chamakh scored 5"
+
+//-------------------------------------------------------------------------------
