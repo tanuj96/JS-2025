@@ -124,8 +124,19 @@
 
 //9. Params vs Arguments
 
-function square(num){ // Params
-    console.log(num * num);
-}
+// function square(num){ // Params
+//     console.log(num * num);
+// }
 
-square(5); // Arguments
+// square(5); // Arguments
+
+//-------------------------------------------------------------------------------
+
+//10. Spread and Rest
+
+// function square(...num) { // rest operator
+//   console.log(num[0] * num[1]);
+// }
+
+// var arr = [5, 6];
+// square(...arr);  // spread operator
