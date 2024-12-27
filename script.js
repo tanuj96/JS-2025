@@ -144,21 +144,58 @@
 //-------------------------------------------------------------------------------
 
 //11. Callback functions
-   // A function which is passed as argument to another functions
-document.addEventListener("click", function(params){
+// A function which is passed as argument to another functions
+// document.addEventListener("click", function(params){
 
-})
+// })
 
+//-------------------------------------------------------------------------------
 
+//12. Arrow Functions (introduced in ES6)
 
+// const add = (firstNum, secondNum) => firstNum + secondNum;
 
+//-------------------------------------------------------------------------------
 
+//13. Arrow Functions vs Regular Function
 
+// 1-> Syntax
+// function square(num) {
+//   return num * num;
+// }
 
+// const square = (num) => {
+//   return num * num;
+// };
 
+// 2-> Implicit "return" keyword
 
+// const add = (firstNum, secondNum) => firstNum + secondNum;
 
+// 3-> arguments
 
+// function fn() {
+//   console.log(arguments);
+// }
 
+// fn(1, 3, 2); // 1 3 2
 
+// const fnArr = () => {
+//   console.log(arguments);
+// };
 
+// fnArr(1, 3, 2); // script.js:184 Uncaught ReferenceError: arguments is not defined
+
+// 4-> "this keyword"
+// let user = {
+//   username: "Tanuj Mittal",
+//   rc1: () => {
+//     console.log("Subscribe to " + this.username);
+//   },
+//   rc2(){
+//     console.log("Subscribe to " + this.username);
+//   },
+// };
+
+// user.rc1();  //Subscribe to undefined (bcoz arrow function this pointing to global window object)
+// user.rc2();  //Subscribe to Tanuj Mittal (regular function this pointing to current object)
