@@ -98,11 +98,24 @@
 
 //8. Function Hoisting
 
-functionName(); // Hello There!
-console.log(x); // undefined
+// functionName(); // Hello There!
+// console.log(x); // undefined
 
-function functionName() {
-  console.log("Hello There!");
-}
+// function functionName() {
+//   console.log("Hello There!");
+// }
 
-var x = 6;
+// var x = 6;
+
+//-------------------------------------------------------------------------------
+
+//9. Hoisting O/P Question
+
+var x = 21;
+
+var fun = function () {
+  console.log(x);
+  var x = 20;
+};
+
+fun();
