@@ -1,5 +1,3 @@
-
-
 //Functions in JS
 
 //1. Function Declaration or Function Defination or Function Statement
@@ -7,7 +5,6 @@
 // function sqaure(num){
 //     return num * num;
 // }
-
 
 //-------------------------------------------------------------------------------
 
@@ -80,5 +77,21 @@
 // }
 
 // console.log(getScore()); // "Chamakh scored 5"
+
+//-------------------------------------------------------------------------------
+
+//7. Function Scope O/P Based Question
+
+// for (let i = 0; i < 5; i++) {
+//     setTimeout(function (){
+//         console.log(i); // 0 1 2 3 4
+//     },i * 1000);
+// }
+
+// for (var i = 0; i < 5; i++) {
+//     setTimeout(function (){
+//         console.log(i); // 5 5 5 5 5
+//     },i * 1000);
+// }
 
 //-------------------------------------------------------------------------------
